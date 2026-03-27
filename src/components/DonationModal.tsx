@@ -61,7 +61,7 @@ const DonationModal = ({
     }, 3000);
   };
 
-  const goal = 50000;
+  const goal = 1000000;
   const progress = Math.min((data.total / goal) * 100, 100);
 
   return (
