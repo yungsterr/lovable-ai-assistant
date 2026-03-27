@@ -50,7 +50,7 @@ const HeroSection = ({ onDonateClick }: { onDonateClick: () => void }) => {
               href="#piliers"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center justify-center px-10 py-5 rounded-xl border-2 border-primary-foreground/20 text-primary-foreground font-semibold text-lg hover:bg-primary-foreground/5 transition-colors"
+              className="inline-flex items-center justify-center px-10 py-5 rounded-xl border-2 border-primary/20 text-primary font-semibold text-lg hover:bg-primary/5 transition-colors"
             >
               Découvrir nos actions
             </motion.a>
