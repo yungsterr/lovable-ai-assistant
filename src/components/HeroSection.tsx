@@ -17,10 +17,7 @@ const HeroSection = ({ onDonateClick }: { onDonateClick: () => void }) => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-4xl mx-auto"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-success/10 border border-success/30 mb-8">
-            <span className="text-sm font-medium text-success">
-              🔒 Statut : Serveur DMZ Sécurisé (HTTPS)
-            </span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-success/10 border border-success/30 mb-8 invisible">
           </div>
 
           <motion.img
