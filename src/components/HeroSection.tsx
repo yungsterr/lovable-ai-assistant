@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Heart } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const HeroSection = ({ onDonateClick }: { onDonateClick: () => void }) => {
   return (
