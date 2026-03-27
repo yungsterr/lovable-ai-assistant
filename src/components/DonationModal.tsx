@@ -40,7 +40,7 @@ const DonationModal = ({
     setData(getStoredData());
   }, [open]);
 
-  const currentAmount = selectedPreset ?? Number(customAmount) || 0;
+  const currentAmount = selectedPreset ?? (Number(customAmount) || 0);
 
   const handleDonate = () => {
     if (currentAmount <= 0) return;
