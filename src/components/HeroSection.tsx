@@ -3,22 +3,10 @@ import { Heart } from "lucide-react";
 
 const HeroSection = ({ onDonateClick }: { onDonateClick: () => void }) => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-primary">
-      {/* Animated mesh gradient background */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-1/2 -left-1/2 w-[200%] h-[200%] animate-[spin_60s_linear_infinite] opacity-30">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-accent/40 blur-3xl" />
-          <div className="absolute top-1/2 right-1/4 w-80 h-80 rounded-full bg-accent/20 blur-3xl" />
-          <div className="absolute bottom-1/4 left-1/3 w-72 h-72 rounded-full bg-accent/30 blur-3xl" />
-        </div>
-        {/* Grid pattern overlay */}
-        <div
-          className="absolute inset-0 opacity-[0.04]"
-          style={{
-            backgroundImage: `linear-gradient(hsl(var(--primary-foreground)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--primary-foreground)) 1px, transparent 1px)`,
-            backgroundSize: "60px 60px",
-          }}
-        />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
+      {/* Subtle gradient background matching logo style */}
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-accent/5" />
       </div>
 
       <div className="relative z-10 container mx-auto px-4 text-center">
