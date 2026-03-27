@@ -22,9 +22,18 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-8 pt-6 border-t border-primary-foreground/10 text-center">
+        <div className="mt-8 pt-6 border-t border-primary-foreground/10 text-center space-y-2">
           <p className="text-sm text-primary-foreground/50">
             © 2026 Net for All. Tous droits réservés.
+          </p>
+          <p className="text-sm text-primary-foreground/40 italic">
+            Saïdar et Oriane on vous aime 💙
+          </p>
+          <p className="text-sm text-primary-foreground/40 italic">
+            Oriane tu nous manques 🤍
+          </p>
+          <p className="text-sm text-primary-foreground/40 italic">
+            Mounir le G.O.A.T qui a sauvé notre projet 🐐
           </p>
         </div>
       </div>
