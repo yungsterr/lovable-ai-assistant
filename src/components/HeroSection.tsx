@@ -21,25 +21,18 @@ const HeroSection = ({ onDonateClick }: { onDonateClick: () => void }) => {
           <motion.img
             src={logo}
             alt="Net for All"
-            className="h-[28rem] md:h-[44rem] w-auto mx-auto mb-8"
+            className="h-[28rem] md:h-[44rem] w-auto mx-auto mb-4"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           />
-          <h2 className="font-display text-3xl md:text-5xl font-semibold mb-6 leading-tight">
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Connecter le monde,
-            </span>{" "}
-            <span className="text-accent">en toute sécurité.</span>
-          </h2>
 
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <motion.button
               onClick={onDonateClick}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-xl bg-accent text-accent-foreground font-bold text-lg hover:bg-accent/90 transition-colors shadow-lg shadow-accent/25"
+              className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-xl bg-primary text-primary-foreground font-bold text-lg hover:bg-primary/90 transition-colors shadow-lg shadow-primary/25"
             >
               <Heart className="w-5 h-5" />
               Faire un don
@@ -53,6 +46,10 @@ const HeroSection = ({ onDonateClick }: { onDonateClick: () => void }) => {
               Découvrir nos actions
             </motion.a>
           </div>
+
+          <h2 className="font-display text-3xl md:text-5xl font-semibold mt-8 leading-tight text-primary">
+            Connecter le monde, en toute sécurité.
+          </h2>
         </motion.div>
       </div>
     </section>
