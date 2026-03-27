@@ -47,7 +47,7 @@ const HeroSection = ({ onDonateClick }: { onDonateClick: () => void }) => {
             </motion.a>
           </div>
 
-          <h2 className="font-display text-3xl md:text-5xl font-semibold mt-20 leading-tight text-primary">
+          <h2 className="font-display text-3xl md:text-5xl font-semibold mt-36 leading-tight text-primary">
             Connecter le monde, en toute sécurité.
           </h2>
         </motion.div>
