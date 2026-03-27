@@ -21,7 +21,7 @@ const HeroSection = ({ onDonateClick }: { onDonateClick: () => void }) => {
           <motion.img
             src={logo}
             alt="Net for All"
-            className="h-64 md:h-96 w-auto mx-auto mb-8"
+            className="h-[28rem] md:h-[44rem] w-auto mx-auto mb-8"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
