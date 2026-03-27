@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Menu, X, Heart } from "lucide-react";
 import logo from "@/assets/logo.png";
 
-const Header = () => {
+const Header = ({ onDonateClick }: { onDonateClick: () => void }) => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const links = [
@@ -29,9 +28,13 @@ const Header = () => {
               {link.label}
             </a>
           ))}
-          <Button className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-6">
+          <button
+            onClick={onDonateClick}
+            className="inline-flex items-center gap-2 px-6 py-2 rounded-lg bg-accent text-accent-foreground font-semibold text-sm hover:bg-accent/90 transition-colors"
+          >
+            <Heart className="w-4 h-4" />
             Faire un don
-          </Button>
+          </button>
         </nav>
 
         <button
@@ -54,9 +57,13 @@ const Header = () => {
               {link.label}
             </a>
           ))}
-          <Button className="mt-2 w-full bg-accent text-accent-foreground hover:bg-accent/90 font-semibold">
+          <button
+            onClick={() => { onDonateClick(); setMobileOpen(false); }}
+            className="mt-2 w-full inline-flex items-center justify-center gap-2 px-6 py-2 rounded-lg bg-accent text-accent-foreground font-semibold text-sm hover:bg-accent/90 transition-colors"
+          >
+            <Heart className="w-4 h-4" />
             Faire un don
-          </Button>
+          </button>
         </div>
       )}
     </header>
