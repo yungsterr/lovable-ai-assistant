@@ -43,10 +43,13 @@ const HeroSection = ({ onDonateClick }: { onDonateClick: () => void }) => {
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center justify-center px-10 py-5 rounded-xl border-2 border-primary/20 text-primary font-semibold text-lg hover:bg-primary/5 transition-colors"
             >
-            >
               Découvrir nos actions
             </motion.a>
           </div>
+
+          <h2 className="font-display text-3xl md:text-5xl font-semibold mt-8 leading-tight text-primary">
+            Connecter le monde, en toute sécurité.
+          </h2>
         </motion.div>
       </div>
     </section>
