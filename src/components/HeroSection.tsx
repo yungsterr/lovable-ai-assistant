@@ -22,15 +22,17 @@ const HeroSection = ({ onDonateClick }: { onDonateClick: () => void }) => {
             </span>
           </div>
 
-          <h1 className="font-display text-5xl md:text-7xl font-bold text-primary-foreground mb-4 leading-tight">
+          <h1 className="font-display text-5xl md:text-7xl font-bold text-primary mb-4 leading-tight">
             NetForAll
           </h1>
-          <h2 className="font-display text-3xl md:text-5xl font-semibold text-primary-foreground/90 mb-6 leading-tight">
-            Connecter le monde,{" "}
+          <h2 className="font-display text-3xl md:text-5xl font-semibold mb-6 leading-tight">
+            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              Connecter le monde,
+            </span>{" "}
             <span className="text-accent">en toute sécurité.</span>
           </h2>
 
-          <p className="text-xl md:text-2xl text-primary-foreground/70 font-body mb-12">
+          <p className="text-xl md:text-2xl text-primary/60 font-body mb-12">
             L'accès à internet pour tous.
           </p>
 
