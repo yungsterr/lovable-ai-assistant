@@ -30,7 +30,7 @@ const Header = ({ onDonateClick }: { onDonateClick: () => void }) => {
           ))}
           <button
             onClick={onDonateClick}
-            className="inline-flex items-center gap-2 px-6 py-2 rounded-lg bg-accent text-accent-foreground font-semibold text-sm hover:bg-accent/90 transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-2 rounded-lg bg-primary text-primary-foreground font-semibold text-sm hover:bg-primary/90 transition-colors"
           >
             <Heart className="w-4 h-4" />
             Faire un don
