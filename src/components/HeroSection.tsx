@@ -33,9 +33,6 @@ const HeroSection = ({ onDonateClick }: { onDonateClick: () => void }) => {
             <span className="text-accent">en toute sécurité.</span>
           </h2>
 
-          <p className="text-xl md:text-2xl text-primary/60 font-body mb-12">
-            L'accès à internet pour tous.
-          </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <motion.button
