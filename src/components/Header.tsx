@@ -13,9 +13,9 @@ const Header = ({ onDonateClick }: { onDonateClick: () => void }) => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-lg border-b border-border">
-      <div className="container mx-auto flex items-center justify-between h-20 px-4">
-        <a href="/" className="flex items-center -ml-4">
-          <img src={logo} alt="Net for All" className="h-16 w-auto" />
+      <div className="flex items-center justify-between h-20 px-4">
+        <a href="/" className="flex items-center ml-1">
+          <img src={logo} alt="Net for All" className="h-20 w-auto" />
         </a>
 
         <nav className="hidden md:flex items-center gap-8">

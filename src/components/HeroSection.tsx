@@ -17,16 +17,11 @@ const HeroSection = ({ onDonateClick }: { onDonateClick: () => void }) => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-4xl mx-auto"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-success/10 border border-success/30 mb-8">
-            <span className="text-sm font-medium text-success">
-              🔒 Statut : Serveur DMZ Sécurisé (HTTPS)
-            </span>
-          </div>
 
           <motion.img
             src={logo}
             alt="Net for All"
-            className="h-32 md:h-48 w-auto mx-auto mb-8"
+            className="h-64 md:h-96 w-auto mx-auto mb-8"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
