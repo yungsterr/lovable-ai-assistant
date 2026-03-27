@@ -23,9 +23,14 @@ const HeroSection = ({ onDonateClick }: { onDonateClick: () => void }) => {
             </span>
           </div>
 
-          <h1 className="font-display text-5xl md:text-7xl font-bold text-primary mb-4 leading-tight">
-            NetForAll
-          </h1>
+          <motion.img
+            src={logo}
+            alt="Net for All"
+            className="h-32 md:h-48 w-auto mx-auto mb-8"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          />
           <h2 className="font-display text-3xl md:text-5xl font-semibold mb-6 leading-tight">
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Connecter le monde,
