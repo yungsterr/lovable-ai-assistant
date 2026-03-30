@@ -9,6 +9,7 @@ const Header = ({ onDonateClick }: { onDonateClick: () => void }) => {
     { label: "Notre Mission", href: "#mission" },
     { label: "Infrastructure", href: "#piliers" },
     { label: "Sécurité", href: "#piliers" },
+    { label: "L'équipe", href: "/equipe" },
   ];
 
   return (
